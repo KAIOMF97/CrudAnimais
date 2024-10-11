@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="animais.css">
+</head>
+<body>
+
+    <h1 style="color: white;">Registro de Animais do Zoológico</h1>
+
+    <label for="especie" style="color: white;">Digite a Espécie do Animal:</label>
+    <input type="text" id="especie" placeholder="Ex: Leão">
+    <button onclick="buscarEspecie()">Buscar por Espécie</button>
+    <br>
+    <label for="nome" style="color: white;">Digite o Nome do Animal:</label>
+    <input type="text" id="nome" placeholder="Ex: Leonidas">
+    <button onclick="buscarNome()">Buscar por Nome</button>
+    <br>
+    <label for="cor" style="color: white;">Cor do Animal:</label>
+    <input type="text" id="cor" placeholder="Ex: Dourado">
+    <button onclick="buscarCor()">Buscar por Cor</button>
+    <br>
+    <label for="dataNascimento" style="color: white;">Data de Nascimento do Animal:</label>
+    <input type="date" id="dataNascimento" placeholder="Ex: 20/08/2011">
+    <br>
+    <label for="sexo" style="color: white;">Selecione o Sexo do Animal</label>
+    <select id="sexo">
+        <option value="Macho">Macho</option>
+        <option value="Fêmea">Fêmea</option>
+    </select>
+    <button onclick="buscarSexo()">Buscar por Sexo</button>
+    <br>
+    <label for="pesoKg" style="color: white;">Peso do animal(Em KG):</label>
+    <input type="number" id="pesoKg" placeholder="Ex: 50">
+    <br>
+    <label for="nivelPerigo" style="color: white;">Nível de Perigo do Animal:</label>
+    <select id="nivelPerigo">
+        <option value="Nenhum Perigo">0 - Nenhum Perigo</option>
+        <option value="Baixo Perigo">1 - Baixo Perigo</option>
+        <option value="Perigo Moderado">2 - Perigo Moderado</option>
+        <option value="Perigo Considerável">3 - Perigo Considerável</option>
+        <option value="Alto Perigo">4 - Alto Perigo</option>
+        <option value="Perigo Extremo">5 - Perigo Extremo</option>
+    </select>
+    <button onclick="buscarPerigo()">Buscar por Nível de Perigo</button>
+    <br>
+    <label for="tipoAlimentacao" style="color: white;">Tipo de Alimentacao:</label>
+    <input type="text" id="tipoAlimentacao" placeholder="Ex: Carne">
+    <button type="button" onclick="buscarAlimentacao()">Buscar por Tipo de Alimentação</button>
+    <br>
+    <br>
+    <button onclick="inserir()">Inserir Animal</button>
+    <button onclick="listar()">Listar Animal</button>
+    <br>
+    <br>
+    <h4><div id="outputListaAnimais" style="color: white;">...</div></h4>
+
+    <script src="animaisClass.js"></script>
+    <script src="animaisControle.js"></script>
+    </body>
+</html>
