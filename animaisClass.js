@@ -1,5 +1,6 @@
 class Animais {
-    constructor(especie, nome, cor, dataNascimento, sexo, pesoKg, nivelPerigo, alimentacao){
+    constructor(id, especie, nome, cor, dataNascimento, sexo, pesoKg, nivelPerigo, alimentacao){
+        this.id = id;
         this.especie = especie;
         this.nome = nome;
         this.cor = cor;
