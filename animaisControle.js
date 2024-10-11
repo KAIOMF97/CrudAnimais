@@ -36,7 +36,7 @@ function listar() {
 
         saida.innerHTML +=
             (i + 1) + "º | " +
-            "Id: " + animais.id + " - "
+            "Id: " + animais.id + " - " +
             "Especie: " + animais.especie + " - "+
             "Nome: " + animais.nome + " - " +
             "Cor: " + animais.cor + " - " +
